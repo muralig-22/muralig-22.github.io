@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Murali G — Embedded Systems Engineer</title>
+<meta name="description" content="Murali G — Embedded Systems Engineer specializing in biomedical devices, STM32/ESP32 firmware, and signal acquisition hardware.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <a href="#home" class="brand">
+      <span class="brand-mark">MG</span>
+      <span class="brand-text">
+        <strong>Murali G</strong>
+        <em>Embedded Systems Engineer</em>
+      </span>
+    </a>
+  </div>
+
+  <nav class="console-nav" aria-label="Primary">
+    <div class="console-line prompt">murali@bench<span class="cursor">:~$</span> ls sections/</div>
+    <ul>
+      <li><a href="#home" data-route="home"><span class="op">$</span> home</a></li>
+      <li><a href="#about" data-route="about"><span class="op">$</span> about</a></li>
+      <li><a href="#skills" data-route="skills"><span class="op">$</span> skills</a></li>
+      <li><a href="#experience" data-route="experience"><span class="op">$</span> experience</a></li>
+      <li class="nav-group">
+        <a href="#projects" data-route="projects"><span class="op">$</span> projects</a>
+        <ul class="sub-nav">
+          <li><a href="#projects/steering-wheel" data-route="projects/steering-wheel">healthcare-steering-wheel</a></li>
+          <li><a href="#projects/machine-health" data-route="projects/machine-health">predictive-machine-health-hub</a></li>
+          <li><a href="#projects/ble-daq" data-route="projects/ble-daq">ble-biomedical-daq</a></li>
+          <li><a href="#projects/dma-system" data-route="projects/dma-system">stm32-dma-system</a></li>
+          <li><a href="#projects/custom-pcb" data-route="projects/custom-pcb">custom-pcb</a></li>
+        </ul>
+      </li>
+      <li><a href="#achievements" data-route="achievements"><span class="op">$</span> achievements</a></li>
+      <li><a href="#resume" data-route="resume"><span class="op">$</span> resume</a></li>
+      <li><a href="#contact" data-route="contact"><span class="op">$</span> contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <div class="signal-mini" aria-hidden="true">
+      <svg viewBox="0 0 200 40" preserveAspectRatio="none">
+        <path id="miniWave" d="M0,20 L30,20 L38,4 L46,36 L54,20 L200,20" />
+      </svg>
+    </div>
+    <div class="socials">
+      <a href="mailto:muraliganesan22@gmail.com" title="Email">EMAIL</a>
+      <a href="https://linkedin.com/in/murali-g-g22" target="_blank" rel="noopener" title="LinkedIn">LINKEDIN</a>
+      <a href="https://github.com/muralig-22" target="_blank" rel="noopener" title="GitHub">GITHUB</a>
+    </div>
+  </div>
+</aside>
+
+<main class="content" id="content">
+  <!-- Views injected by script.js -->
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
