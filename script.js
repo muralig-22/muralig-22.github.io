@@ -412,8 +412,8 @@ function renderResume() {
     <div class="card resume-panel">
       <div class="icon">${ICONS.file}</div>
       <h3>Download the full resume</h3>
-      <p>Add your exported resume as <code>assets/resume.pdf</code> in this repo — this button links straight to it once it's in place.</p>
-      <a class="btn btn-primary" href="assets/resume.pdf" download>${ICONS.down} Download Resume (PDF)</a>
+      <p>Get the complete, up-to-date resume as a PDF.</p>
+      <a class="btn btn-primary" href="Murali_Resume.pdf" download>${ICONS.down} Download Resume (PDF)</a>
       <div class="resume-summary"><h4>Quick Summary</h4><p>${DATA.summary}</p></div>
     </div>
   </section>`;
