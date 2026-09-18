@@ -3,234 +3,498 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Slate — Framer templates for teams that care about craft</title>
-<meta name="description" content="Slate is a small studio building premium Framer templates: clean design systems, retina-ready assets, and fast, SEO-friendly builds. One designer, direct support.">
+<title>Murali G — Embedded Systems Engineer</title>
+<meta name="description" content="Murali G is an embedded systems engineer building firmware and signal-acquisition pipelines for biomedical and IoT hardware — STM32, ESP32, ARM Cortex-M, real-time sensor processing.">
+<meta name="author" content="Murali G">
 
-<meta property="og:title" content="Slate — Framer templates for teams that care about craft">
-<meta property="og:description" content="Premium Framer templates built by a single designer. Clean systems, fast performance, direct support.">
 <meta property="og:type" content="website">
+<meta property="og:title" content="Murali G — Embedded Systems Engineer">
+<meta property="og:description" content="Embedded systems engineer building firmware and signal-acquisition pipelines for biomedical and IoT hardware.">
+<meta property="og:image" content="assets/images/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="data:,">
+<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Murali G",
+  "jobTitle": "Embedded Systems Engineer",
+  "email": "mailto:muraliganesan22@gmail.com",
+  "url": "https://muraliganesan.dev",
+  "sameAs": [
+    "https://www.linkedin.com/in/murali-g-g22",
+    "https://github.com/muralig-22"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Bannari Amman Institute of Technology"
+  }
+}
+</script>
 </head>
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+<a href="#main" class="skip-link">Skip to content</a>
 
-<header class="site-header" id="site-header">
-  <div class="container header-inner">
-    <a href="#top" class="wordmark">Slate</a>
-    <nav class="main-nav" aria-label="Primary">
-      <a href="#work">Templates</a>
-      <a href="#included">What's included</a>
-      <a href="#support">Support</a>
+<header class="nav">
+  <div class="container">
+    <a href="#top" class="nav-name">Murali G<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta-mobile"><a href="assets/resume/Murali_G_Resume.pdf" class="btn btn-primary btn-small" download>Resume</a></li>
+      </ul>
     </nav>
-    <a class="btn btn-primary btn-small" href="#work">Browse templates</a>
+    <div class="nav-cta desktop-only">
+      <a href="assets/resume/Murali_G_Resume.pdf" class="btn btn-secondary btn-small" download>Resume</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </header>
 
 <main id="main">
 
+  <!-- ============================= HERO ============================= -->
   <section class="hero" id="top">
     <div class="container hero-grid">
-      <div class="hero-copy">
-        <h1>Framer templates built the way I'd build my own product.</h1>
-        <p class="hero-lede">I design and code Framer templates for founders, studios, and product teams — structured like real software, not stitched-together mockups. Every layout ships with a working component system underneath it.</p>
+      <div>
+        <p class="hero-eyebrow"><span class="dot"></span> Interning at Qneuro India · Graduating 2026</p>
+        <h1>Embedded systems for signals that come from <em>the body</em>.</h1>
+        <p class="hero-sub">I build the firmware and sensor pipelines that turn raw ECG, PPG, motion and vibration signals into something a system can act on — on STM32 and ESP32 hardware, from ADC to UART to dashboard.</p>
         <div class="hero-actions">
-          <a href="#work" class="btn btn-primary">Browse templates</a>
-          <a href="#support" class="btn btn-ghost">Email me a question</a>
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="assets/resume/Murali_G_Resume.pdf" class="btn btn-secondary" download>Download résumé</a>
         </div>
-        <dl class="hero-stats">
-          <div>
-            <dt>Templates shipped</dt>
-            <dd>14</dd>
-          </div>
-          <div>
-            <dt>Average Lighthouse score</dt>
-            <dd>97</dd>
-          </div>
-          <div>
-            <dt>Support response time</dt>
-            <dd>Same day</dd>
-          </div>
-        </dl>
+        <div class="hero-meta">
+          <div><strong>2022–26</strong>Biomedical Engineering, BIT</div>
+          <div><strong>8+</strong>hardware &amp; firmware builds</div>
+          <div><strong>Chennai</strong>India</div>
+        </div>
       </div>
 
-      <div class="hero-visual" aria-hidden="true">
-        <div class="mock-browser">
-          <div class="mock-browser-bar">
-            <span></span><span></span><span></span>
+      <div class="hero-visual">
+        <div class="scope animate" id="scope">
+          <div class="scope-head">
+            <span class="lbl">LEAD II · LIVE</span>
+            <span class="val">72 BPM</span>
           </div>
-          <div class="mock-browser-body">
-            <div class="mock-nav">
-              <div class="mock-dot"></div>
-              <div class="mock-line short"></div>
-              <div class="mock-line short"></div>
-              <div class="mock-line short"></div>
-            </div>
-            <div class="mock-hero">
-              <div class="mock-line title"></div>
-              <div class="mock-line title short"></div>
-              <div class="mock-line body"></div>
-              <div class="mock-line body" style="width:70%"></div>
-              <div class="mock-cta"></div>
-            </div>
-            <div class="mock-cards">
-              <div class="mock-card"></div>
-              <div class="mock-card"></div>
-              <div class="mock-card"></div>
-            </div>
+          <svg viewBox="0 0 480 200" role="img" aria-label="Stylised ECG waveform, representative of the signal-processing work in Murali's projects">
+            <line class="scope-grid-line" x1="0" y1="50" x2="480" y2="50"/>
+            <line class="scope-grid-line" x1="0" y1="100" x2="480" y2="100"/>
+            <line class="scope-grid-line" x1="0" y1="150" x2="480" y2="150"/>
+            <path class="scope-trace" d="M0,100 L40,100 L55,100 L62,80 L70,120 L78,20 L86,170 L94,95 L100,100 L140,100 L155,100 L162,80 L170,120 L178,20 L186,170 L194,95 L200,100 L240,100 L255,100 L262,80 L270,120 L278,20 L286,170 L294,95 L300,100 L340,100 L355,100 L362,80 L370,120 L378,20 L386,170 L394,95 L400,100 L440,100 L455,100 L462,80 L470,120 L478,20 L480,90"/>
+          </svg>
+          <div class="scope-foot">
+            <span>500 Hz · Pan-Tompkins R-peak detection</span>
+            <span>Quality: GOOD</span>
           </div>
         </div>
-        <div class="mock-shadow-blob"></div>
       </div>
     </div>
   </section>
 
-  <section class="included" id="included">
+  <!-- ============================= ABOUT ============================= -->
+  <section id="about">
+    <div class="container about-grid">
+      <div>
+        <div class="section-head">
+          <span class="index">01 / About</span>
+          <h2>Where biomedical engineering meets embedded firmware</h2>
+        </div>
+        <div class="about-copy">
+          <p>I'm a final-year <strong>Biomedical Engineering (Hons.)</strong> student at Bannari Amman Institute of Technology, currently working as an <strong>Embedded Hardware Intern at Qneuro India</strong>, where I write ARM Cortex-M firmware for real-time EEG acquisition.</p>
+          <p>Most of what I build sits at the same junction: a physical sensor on one side — an accelerometer, an ECG front-end, a pressure array — and a microcontroller on the other that has to sample it, process it correctly, and get the result somewhere useful without falling behind in real time.</p>
+          <p>That constraint is what I enjoy. Whether it's fitting a QRS detector into a 2&nbsp;ms sampling budget on an STM32F401, or getting three identical I²C accelerometers to talk to one ESP32 without address conflicts, the interesting part is almost always the boundary between the hardware's limits and what the signal actually needs.</p>
+        </div>
+      </div>
+      <div class="stat-list">
+        <div class="stat"><span class="n">STM32 / ESP32</span><span class="l">primary MCU families</span></div>
+        <div class="stat"><span class="n">₹6L</span><span class="l">MSME Idea Hackathon 5.0 prize</span></div>
+        <div class="stat"><span class="n">UART · SPI · I²C · BLE</span><span class="l">protocols used in shipped projects</span></div>
+        <div class="stat"><span class="n">Altium</span><span class="l">PCB design &amp; bring-up</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= SKILLS ============================= -->
+  <section id="skills">
     <div class="container">
       <div class="section-head">
-        <h2>What's in every template</h2>
-        <p>These are the standards I hold every file to before it goes on sale. No exceptions, no rushed releases.</p>
+        <span class="index">02 / Technical expertise</span>
+        <h2>What I build with</h2>
+        <p class="lede">Grouped by where each tool actually shows up in the work, not by how commonly it appears in an embedded job listing.</p>
       </div>
 
-      <ul class="feature-list">
-        <li class="feature-row">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/></svg>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Embedded &amp; firmware</h3>
+          <div class="tag-row">
+            <span class="tag">Embedded C</span>
+            <span class="tag">ARM Cortex-M</span>
+            <span class="tag">STM32</span>
+            <span class="tag">ESP32 / ESP32-S3</span>
+            <span class="tag">FreeRTOS</span>
+            <span class="tag">Bare-metal &amp; HAL drivers</span>
           </div>
-          <div class="feature-text">
-            <h3>Clean, considered layouts</h3>
-            <p>Every screen is built against a real grid and tested against current design conventions before it's published — not assembled from leftover sections.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Communication protocols</h3>
+          <div class="tag-row">
+            <span class="tag">UART</span>
+            <span class="tag">SPI</span>
+            <span class="tag">I²C</span>
+            <span class="tag">BLE</span>
+            <span class="tag">TCP/IP</span>
+            <span class="tag">CAN</span>
           </div>
-        </li>
-
-        <li class="feature-row">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="18" y="6" width="4" height="8" rx="1" stroke="currentColor" stroke-width="1.6"/><line x1="6" y1="18" x2="12" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="skill-card">
+          <h3>Hardware &amp; electronics</h3>
+          <div class="tag-row">
+            <span class="tag">PCB bring-up</span>
+            <span class="tag">Altium Designer</span>
+            <span class="tag">Sensor integration</span>
+            <span class="tag">Oscilloscope</span>
+            <span class="tag">Logic analyzer</span>
+            <span class="tag">JTAG / SWD</span>
           </div>
-          <div class="feature-text">
-            <h3>Retina-ready on every screen</h3>
-            <p>Layouts are tuned for desktop, tablet, and phone breakpoints individually, and every graphic exports crisp on high-density displays.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Programming &amp; CS</h3>
+          <div class="tag-row">
+            <span class="tag">C</span>
+            <span class="tag">Python</span>
+            <span class="tag">Data structures</span>
+            <span class="tag">Bit manipulation</span>
+            <span class="tag">Memory-mapped I/O</span>
+            <span class="tag">Kotlin</span>
           </div>
-        </li>
-
-        <li class="feature-row">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v3M12 18.5v3M21.5 12h-3M5.5 12h-3M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1M18.4 18.4l-2.1-2.1M7.7 7.7 5.6 5.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div class="skill-card">
+          <h3>Signal processing &amp; ML</h3>
+          <div class="tag-row">
+            <span class="tag">Digital filtering (IIR/FIR)</span>
+            <span class="tag">QRS / R-peak detection</span>
+            <span class="tag">TensorFlow / Keras</span>
+            <span class="tag">CNN · LSTM · XGBoost</span>
           </div>
-          <div class="feature-text">
-            <h3>Set up for easy customising</h3>
-            <p>Colour, type, and components are wired to global styles, so changing a brand colour or a font once updates it across the entire site.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools &amp; platforms</h3>
+          <div class="tag-row">
+            <span class="tag">STM32CubeIDE</span>
+            <span class="tag">STM32CubeMX</span>
+            <span class="tag">Git</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Firebase RTDB</span>
           </div>
-        </li>
-
-        <li class="feature-row">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.6"/><line x1="20" y1="20" x2="15.8" y2="15.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          </div>
-          <div class="feature-text">
-            <h3>Built to be found</h3>
-            <p>Semantic markup, descriptive alt text, and clean heading structure throughout, so search engines can read your site as well as your visitors can.</p>
-          </div>
-        </li>
-
-        <li class="feature-row">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="feature-text">
-            <h3>Fast by default</h3>
-            <p>Lightweight assets and minimal dependencies keep load times low, so every template starts from a strong Lighthouse score rather than fighting for one.</p>
-          </div>
-        </li>
-
-        <li class="feature-row">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5 12 12l8-5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/></svg>
-          </div>
-          <div class="feature-text">
-            <h3>Direct, one-to-one support</h3>
-            <p>If something isn't working the way you expect, you email me — not a ticket queue. I answer support requests myself, usually the same day.</p>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="work" id="work">
+  <!-- ============================= PROJECTS ============================= -->
+  <section id="projects">
     <div class="container">
       <div class="section-head">
-        <h2>Recent templates</h2>
-        <p>A small, current catalogue. Each one is a full Framer project file with global styles pre-configured.</p>
+        <span class="index">03 / Featured projects</span>
+        <h2>Case studies</h2>
+        <p class="lede">Each one starts with a real constraint — a sensor, a protocol limit, a memory budget — and works through it to a running system.</p>
       </div>
 
-      <div class="work-grid">
-        <article class="work-card">
-          <div class="work-preview work-preview--warm" aria-hidden="true">
-            <div class="wp-nav"><span></span><span></span><span></span></div>
-            <div class="wp-hero"></div>
-            <div class="wp-row"><span></span><span></span></div>
-          </div>
-          <div class="work-meta">
-            <h3>Kestrel</h3>
-            <p>Marketing site for early-stage SaaS. Pricing, changelog, and docs sections included.</p>
-          </div>
-        </article>
+      <!-- Project 1 -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-badge">Winner · MSME Idea Hackathon 5.0</span>
+          <h3>Predictive Machine Health &amp; Control Hub</h3>
+          <span class="project-year">2025</span>
+          <p style="color:var(--ink-soft)">A real-time condition-monitoring system for industrial equipment, spanning firmware, cloud and dashboard.</p>
+        </div>
+        <div class="case">
+          <div class="case-row"><span class="k">PROBLEM</span><span class="v">Industrial equipment failures are often caught late because vibration, temperature, pressure and current are monitored separately, if at all.</span></div>
+          <div class="case-row"><span class="k">APPROACH</span><span class="v">Built a real-time multi-sensor acquisition layer across STM32 and ESP32 boards, streaming vibration, temperature, pressure and current readings to the cloud, then surfaced them on a web dashboard for remote, predictive monitoring.</span></div>
+          <div class="case-row"><span class="k">STACK</span><span class="v">
+            <div class="stack-row"><span class="tag">STM32</span><span class="tag">ESP32</span><span class="tag">Sensor acquisition</span><span class="tag">Cloud connectivity</span><span class="tag">Web dashboard</span></div>
+          </span></div>
+          <div class="case-row"><span class="k">RESULT</span><span class="v">Won the MSME Idea Hackathon 5.0, organised by the Government of India, and was awarded ₹6 lakhs.</span></div>
+        </div>
+      </article>
 
-        <article class="work-card">
-          <div class="work-preview work-preview--cool" aria-hidden="true">
-            <div class="wp-nav"><span></span><span></span><span></span></div>
-            <div class="wp-grid">
-              <span></span><span></span><span></span><span></span>
-            </div>
-          </div>
-          <div class="work-meta">
-            <h3>Foundry</h3>
-            <p>Portfolio system for design studios, with a case-study template and a light CMS setup.</p>
-          </div>
-        </article>
+      <!-- Project 2 -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-badge">Cobuild Labs · Neurostate</span>
+          <h3>Driver Biosignal Console</h3>
+          <span class="project-year">Multi-modal biosignal system</span>
+          <p style="color:var(--ink-soft)">A driver-monitoring rig that fuses ECG, grip pressure, PPG and motion into one live view.</p>
+        </div>
+        <div class="case">
+          <div class="case-row"><span class="k">PROBLEM</span><span class="v">Reading a driver's physiological state needs several biosignal modalities sampled together and shown in a way a person can actually interpret while it's happening.</span></div>
+          <div class="case-row"><span class="k">APPROACH</span><span class="v">Integrated ECG acquisition via an ADS1299 front-end, a 12-channel FSR grip-pressure array on the steering wheel, PPG via a MAX30105, and IMU motion data — all sampled from Arduino Due firmware — then built a Kotlin Android app (MPAndroidChart, BLE) and a browser dashboard with animated waveforms and a heat-mapped steering-wheel view.</span></div>
+          <div class="case-row"><span class="k">STACK</span><span class="v">
+            <div class="stack-row"><span class="tag">Arduino Due</span><span class="tag">ADS1299</span><span class="tag">MAX30105</span><span class="tag">IMU</span><span class="tag">BLE</span><span class="tag">Kotlin / Android</span><span class="tag">HTML/CSS/JS dashboard</span></div>
+          </span></div>
+          <div class="case-row"><span class="k">RESULT</span><span class="v">A working multi-channel pipeline — firmware through mobile app to dashboard — visualizing ECG, PPG, IMU and grip pressure from a single driver session in real time.</span></div>
+        </div>
+      </article>
 
-        <article class="work-card">
-          <div class="work-preview work-preview--dark" aria-hidden="true">
-            <div class="wp-nav"><span></span><span></span><span></span></div>
-            <div class="wp-split">
-              <div class="wp-split-text"></div>
-              <div class="wp-split-panel"></div>
-            </div>
-          </div>
-          <div class="work-meta">
-            <h3>Almanac</h3>
-            <p>Long-form editorial layout for newsletters and studio journals, built for fast reading.</p>
-          </div>
-        </article>
+      <!-- Project 3 -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-badge">STM32F401RE</span>
+          <h3>Real-Time ECG Streaming Pipeline</h3>
+          <span class="project-year">Firmware · signal processing</span>
+          <div class="project-links"><a href="https://github.com/muralig-22/ecg-streaming-pipeline" target="_blank" rel="noopener">View repository</a></div>
+        </div>
+        <div class="case">
+          <div class="case-row"><span class="k">PROBLEM</span><span class="v">Detecting heartbeats reliably on a microcontroller means processing every sample within a fixed 2&nbsp;ms budget, without ever buffering a full recording.</span></div>
+          <div class="case-row"><span class="k">APPROACH</span><span class="v">Sampled ECG at 500&nbsp;Hz on a TIM3-triggered ADC, ran it through a 4th-order IIR band-pass filter (5–20&nbsp;Hz, Direct Form II Transposed), then a Pan-Tompkins-style QRS detector — derivative, squaring, moving-window integration, adaptive threshold. Heart rate is the median of the last 5 RR intervals, gated to a 30–220&nbsp;BPM plausible range, alongside a weighted 0–100 signal-quality score. Results stream out over a compact UART protocol with an XOR checksum.</span></div>
+          <div class="case-row"><span class="k">STACK</span><span class="v">
+            <div class="stack-row"><span class="tag">STM32F401RE</span><span class="tag">C</span><span class="tag">IIR filtering</span><span class="tag">Pan-Tompkins QRS detection</span><span class="tag">UART protocol design</span></div>
+          </span></div>
+          <div class="case-row"><span class="k">RESULT</span><span class="v">Constant per-sample (O(1)) processing with bounded memory, plus a host-side C simulator that validates the same algorithm on a PC — against a Python analysis layer — before it ever touches hardware.</span></div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-badge">Biomedical ML</span>
+          <h3>Cuffless Blood Pressure Estimation</h3>
+          <span class="project-year">PPG + ECG</span>
+          <div class="project-links"><a href="https://github.com/muralig-22/Cuffless-BP-Estimation-Using-PPG-ECG-Signals" target="_blank" rel="noopener">View repository</a></div>
+        </div>
+        <div class="case">
+          <div class="case-row"><span class="k">PROBLEM</span><span class="v">Cuff-based blood pressure readings are episodic, not continuous — estimating BP directly from PPG and ECG waveforms could close that gap.</span></div>
+          <div class="case-row"><span class="k">APPROACH</span><span class="v">Segmented synchronized PPG/ECG into 5-second, 625-sample windows at 125&nbsp;Hz, and trained a CNN + BiLSTM to learn waveform and temporal structure. Fused those deep features with handcrafted pulse-transit-time and heart-rate features, then refined the final systolic and diastolic estimates with separate XGBoost regressors.</span></div>
+          <div class="case-row"><span class="k">STACK</span><span class="v">
+            <div class="stack-row"><span class="tag">Python</span><span class="tag">TensorFlow / Keras</span><span class="tag">CNN + BiLSTM</span><span class="tag">XGBoost</span><span class="tag">Signal segmentation</span></div>
+          </span></div>
+          <div class="case-row"><span class="k">RESULT</span><span class="v">Benchmarked five architectures — CNN, LSTM, CNN+LSTM, CNN+BiLSTM and a deeper CNN — against MAE and RMSE to compare how much temporal modelling actually helps.</span></div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-badge">2024</span>
+          <h3>Fetal Monitoring System</h3>
+          <span class="project-year">ESP32 · motion sensing</span>
+          <div class="project-links"><a href="https://github.com/muralig-22/Fetal-Monitoring-System" target="_blank" rel="noopener">View repository</a></div>
+        </div>
+        <div class="case">
+          <div class="case-row"><span class="k">PROBLEM</span><span class="v">Reliable fetal-movement detection benefits from sensor redundancy, but identical I²C accelerometers share the same bus address.</span></div>
+          <div class="case-row"><span class="k">APPROACH</span><span class="v">Wired three MPU6050 accelerometers through a TCA9548A I²C multiplexer into one ESP32, computed 3-axis acceleration magnitude per sensor, and classified each reading against normal / stretching / kick thresholds — triggering a buzzer on kick-level events and bridging results over Bluetooth Serial.</span></div>
+          <div class="case-row"><span class="k">STACK</span><span class="v">
+            <div class="stack-row"><span class="tag">ESP32</span><span class="tag">MPU6050 ×3</span><span class="tag">TCA9548A I²C mux</span><span class="tag">Bluetooth Serial</span></div>
+          </span></div>
+          <div class="case-row"><span class="k">RESULT</span><span class="v">A working multi-sensor motion-classification prototype built around redundant, address-safe I²C sensing.</span></div>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project">
+        <div class="project-meta">
+          <span class="project-badge">Finalist · BITHack 23</span>
+          <h3>ESP32-CAM Home Automation</h3>
+          <span class="project-year">IoT · cloud sync</span>
+          <div class="project-links"><a href="https://github.com/muralig-22/Home-Automation-System-Using-IoT-with-ESP32-CAM" target="_blank" rel="noopener">View repository</a></div>
+        </div>
+        <div class="case">
+          <div class="case-row"><span class="k">PROBLEM</span><span class="v">ESP32-CAM leaves very little spare GPIO once the camera interface is wired up — not enough to also drive relays, a keypad and a display directly.</span></div>
+          <div class="case-row"><span class="k">APPROACH</span><span class="v">Offloaded relay control to a PCF8575 I²C I/O expander, synced through a Firebase Realtime Database stream callback into the main loop, added a PSRAM-backed camera HTTP server for live video, and a 4×4 keypad with an I²C LCD for local password-based access control.</span></div>
+          <div class="case-row"><span class="k">STACK</span><span class="v">
+            <div class="stack-row"><span class="tag">ESP32-CAM</span><span class="tag">Firebase RTDB</span><span class="tag">PCF8575</span><span class="tag">I²C</span><span class="tag">Camera / HTTP server</span></div>
+          </span></div>
+          <div class="case-row"><span class="k">RESULT</span><span class="v">Finalist, BITHack 23 (Hardware edition) — six-relay remote control, live camera feed and local keypad lock running on one board.</span></div>
+        </div>
+      </article>
+
+      <!-- Also built -->
+      <div class="more-label">Also built</div>
+      <div class="more-grid">
+        <div class="more-card">
+          <h4>STM32 Sensor Compression + UART Pipeline</h4>
+          <p>Delta-encodes simulated 24-bit and 16-bit sensor signals down to 8 bits, batches 10 samples per packet, and streams them over USART2 on an STM32F446RE.</p>
+          <a href="https://github.com/muralig-22/stm32-sensor-compression-uart-pipeline" target="_blank" rel="noopener">View repository →</a>
+        </div>
+        <div class="more-card">
+          <h4>Fragrance Atomizer</h4>
+          <p>An ESP32-C3, BLE-controlled 5-channel ultrasonic mist device built on perfboard with IP5306 power management — including a boost-converter pull-up fix and transistor saturation analysis.</p>
+          <span></span>
+        </div>
+        <div class="more-card">
+          <h4>ESP32-S3 Voice Assistant</h4>
+          <p>Wake-word and push-to-talk voice pipeline on an ESP32-S3-EYE — INMP441 mic, MAX98357A amp — streaming audio to a Python/Whisper server.</p>
+          <span></span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="support" id="support">
-    <div class="container support-inner">
-      <div class="support-copy">
-        <h2>Questions before you buy a template? Email me directly.</h2>
-        <p>There's no support team behind this — just me. If a template doesn't fit your use case, or something breaks after you customise it, write in and I'll help you sort it out.</p>
-        <a class="btn btn-primary" href="mailto:hello@slatetemplates.com">hello@slatetemplates.com</a>
+  <!-- ============================= JOURNEY ============================= -->
+  <section id="journey">
+    <div class="container">
+      <div class="section-head">
+        <span class="index">04 / How it connects</span>
+        <h2>Sensors to signal, signal to system</h2>
       </div>
-      <div class="support-facts">
-        <div class="support-fact">
-          <span class="support-fact-num">1</span>
-          <p>I read and answer every message myself.</p>
+      <div class="journey">
+        <div class="journey-node">Sensors &amp; electronics</div>
+        <span class="journey-arrow">→</span>
+        <div class="journey-node">Firmware &amp; RTOS</div>
+        <span class="journey-arrow">→</span>
+        <div class="journey-node">Protocols &amp; telemetry</div>
+        <span class="journey-arrow">→</span>
+        <div class="journey-node">IoT &amp; cloud</div>
+        <span class="journey-arrow">→</span>
+        <div class="journey-node">Biomedical signal &amp; ML</div>
+      </div>
+      <p class="journey-note">None of these are learned in isolation. A biosignal project needs the electronics to acquire a clean waveform, the firmware to sample it on time, a protocol to get it off the board, and — increasingly — a model on the other end that can make sense of it.</p>
+    </div>
+  </section>
+
+  <!-- ============================= EXPERIENCE ============================= -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head">
+        <span class="index">05 / Experience</span>
+        <h2>Work</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-head">
+            <div>
+              <h3>Embedded Hardware Intern</h3>
+              <div class="timeline-org">Qneuro India Pvt. Ltd. · Chennai</div>
+            </div>
+            <div class="timeline-date">Jul 2025 — Present</div>
+          </div>
+          <ul>
+            <li>Developed and debugged Embedded C firmware on ARM Cortex-M microcontrollers for real-time EEG acquisition and biomedical data processing.</li>
+            <li>Implemented BLE communication for wireless transfer of acquired physiological sensor data.</li>
+            <li>Built an Automatic Gain Control (AGC) algorithm for dynamic IR/Red LED calibration based on skin tone, working on signal acquisition and sensor calibration.</li>
+            <li>Integrated Linux-based Raspberry Pi systems for TCP/IP communication and camera streaming, and carried out PCB bring-up and circuit debugging.</li>
+            <li>Ran firmware testing, calibration and system verification using oscilloscopes and logic analyzers alongside hardware and software teams.</li>
+          </ul>
         </div>
-        <div class="support-fact">
-          <span class="support-fact-num">2</span>
-          <p>Most replies go out the same day, always within two.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= ACHIEVEMENTS ============================= -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-head">
+        <span class="index">06 / Achievements</span>
+        <h2>Recognition</h2>
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card">
+          <div class="ach-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0V4z"/><path d="M5 6H3a2 2 0 002 2M19 6h2a2 2 0 01-2 2"/></svg>
+          </div>
+          <div>
+            <h3>Winner — MSME Idea Hackathon 5.0</h3>
+            <div class="org">Government of India · 2026</div>
+            <p>Recognised and awarded ₹6 lakhs for "Predictive Machine Health and Control Hub."</p>
+          </div>
         </div>
-        <div class="support-fact">
-          <span class="support-fact-num">3</span>
-          <p>Support is included with every template, no separate plan.</p>
+        <div class="ach-card">
+          <div class="ach-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15l-5.5 3 1-6.2L3 7.5l6.3-.9L12 1l2.7 5.6 6.3.9-4.5 4.3 1 6.2z"/></svg>
+          </div>
+          <div>
+            <h3>Finalist — BITHack 23</h3>
+            <div class="org">Hardware edition · 2023</div>
+            <p>Reached the finals with the ESP32-CAM Home Automation System.</p>
+          </div>
         </div>
+      </div>
+      <div class="cert-row">
+        <span class="cert-pill"><strong>Radio Frequency Applications</strong> — Microchip Technology Inc.</span>
+        <span class="cert-pill"><strong>PCB Design — Altium Designer</strong> — Altium®</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= EDUCATION ============================= -->
+  <section id="education">
+    <div class="container">
+      <div class="section-head">
+        <span class="index">07 / Education</span>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="degree">B.E., Biomedical Engineering (Hons.)</div>
+          <div class="school">Bannari Amman Institute of Technology</div>
+          <div class="when">2022 — 2026</div>
+          <div class="score">CGPA 8.2</div>
+        </div>
+        <div class="edu-card">
+          <div class="degree">Higher &amp; Secondary Education</div>
+          <div class="school">Nirmala Matriculation Higher Secondary School</div>
+          <div class="when">2019 — 2022</div>
+          <div class="score">HSC 83.3% · SSLC 96.4%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= RESUME CTA ============================= -->
+  <section class="resume-band">
+    <div class="container">
+      <div>
+        <h2>Want the full picture?</h2>
+        <p>Every role, project and skill in one page.</p>
+      </div>
+      <div class="actions">
+        <a href="assets/resume/Murali_G_Resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary">View résumé</a>
+        <a href="assets/resume/Murali_G_Resume.pdf" class="btn btn-primary" download>Download résumé</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CONTACT ============================= -->
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy">
+        <h2>Have an interesting embedded or biomedical problem?</h2>
+        <p>I'm looking for embedded systems or firmware roles where hardware and signal processing meet — reach out and I'll get back to you.</p>
+      </div>
+      <div class="contact-list">
+        <a class="contact-row" href="mailto:muraliganesan22@gmail.com">
+          <div><div class="label">Email</div><div class="value">muraliganesan22@gmail.com</div></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 4l8 8 8-8"/></svg>
+        </a>
+        <a class="contact-row" href="https://www.linkedin.com/in/murali-g-g22" target="_blank" rel="noopener">
+          <div><div class="label">LinkedIn</div><div class="value">linkedin.com/in/murali-g-g22</div></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17V10M7 7v.01M12 17v-4a2 2 0 014 0v4M12 13v4M17 13v4"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+        </a>
+        <a class="contact-row" href="https://github.com/muralig-22" target="_blank" rel="noopener">
+          <div><div class="label">GitHub</div><div class="value">github.com/muralig-22</div></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+        </a>
+        <a class="contact-row" href="tel:+917010662550">
+          <div><div class="label">Phone</div><div class="value">+91 70106 62550</div></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8.1 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"/></svg>
+        </a>
       </div>
     </div>
   </section>
@@ -238,10 +502,17 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <a href="#top" class="wordmark">Slate</a>
-    <p class="footer-note">Designed and built by one person. Templates for Framer.</p>
-    <a href="mailto:hello@slatetemplates.com" class="footer-email">hello@slatetemplates.com</a>
+  <div class="container">
+    <div class="footer-brand">
+      <span class="name">Murali G</span>
+      <span class="role">Embedded systems engineer, biomedical focus</span>
+    </div>
+    <ul class="footer-links">
+      <li><a href="https://github.com/muralig-22" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/murali-g-g22" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:muraliganesan22@gmail.com">Email</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Murali G</span>
   </div>
 </footer>
 
