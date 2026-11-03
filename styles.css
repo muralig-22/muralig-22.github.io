@@ -950,37 +950,26 @@ section:nth-of-type(even){background:rgba(255,255,255,.34)}
 @media(prefers-reduced-motion:reduce){.skill-card,.project,.timeline-item,.edu-card,.contact-row,.more-card,.btn,.nav-links a{transform:none!important}}
 
 
-/* ==========================================================================
-   Hero visual — stylised STM32 package (replaces the former ECG trace)
-   ========================================================================== */
-.mcu{position:relative;border:1px solid rgba(197,209,213,.9);border-radius:var(--radius-l);padding:1.35rem 1.35rem 1.05rem;background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(248,251,251,.96));box-shadow:var(--shadow-lg);overflow:hidden}
-.mcu-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.4rem}
-.mcu-head .lbl{font-family:var(--font-display);font-weight:800;color:var(--ink);letter-spacing:-.01em}
-.mcu-head .val{font-size:.78rem;color:var(--accent-ink);font-weight:600}
-.mcu svg{width:100%;height:auto;display:block}
-.mcu .pin{fill:#b9c7cb}
-.mcu .chip-body{fill:#102027;stroke:#18353b;stroke-width:2}
-.mcu .chip-dot{fill:none;stroke:#5f7f86;stroke-width:1.5}
-.mcu .chip-name{fill:#fff;font-family:var(--font-display);font-weight:800;font-size:30px;letter-spacing:-.02em}
-.mcu .chip-sub{fill:#9fb6bb;font-family:var(--font-body);font-size:13px;letter-spacing:.04em}
-.mcu .trace{fill:none;stroke:#b9c7cb;stroke-width:1.6}
-.mcu .trace-tx{stroke:var(--accent);stroke-width:2.2;stroke-dasharray:6 6;animation:tx-flow 1.4s linear infinite}
-.mcu .pin-labels text{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:11.5px;fill:var(--ink-soft)}
-.mcu .pin-labels .hot{fill:var(--accent-ink);font-weight:700}
-@keyframes tx-flow{to{stroke-dashoffset:-12}}
+/* Hero visual: idea-to-product pipeline */
+.pipeline{border:1px solid rgba(197,209,213,.9);border-radius:var(--radius-l);padding:1.35rem 1.5rem 1.2rem;background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(248,251,251,.96));box-shadow:var(--shadow-lg)}
+.pipeline-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.pipeline-head .lbl{font-family:var(--font-display);font-weight:800;color:var(--ink);letter-spacing:-.01em}
+.pipeline-head .val{display:inline-flex;align-items:center;gap:.45rem;font-size:.78rem;font-weight:600;color:var(--accent-ink)}
+.live{width:8px;height:8px;border-radius:50%;background:#20A46B;box-shadow:0 0 0 3px rgba(32,164,107,.18)}
 
-.frame{margin-top:.6rem;padding:.85rem .9rem .9rem;border:1px solid var(--line);border-radius:12px;background:rgba(228,244,243,.45)}
-.frame-title{display:flex;justify-content:space-between;gap:1rem;font-size:.74rem;color:var(--ink-faint);font-weight:600;margin-bottom:.6rem}
-.frame-bytes{display:grid;grid-template-columns:repeat(6,1fr);gap:.4rem}
-.byte{display:flex;flex-direction:column;align-items:center;gap:.15rem;padding:.45rem 0 .35rem;border:1px solid var(--line-strong);border-radius:8px;background:var(--surface);animation:byte-on 4.8s steps(1,end) infinite}
-.byte b{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:1.02rem;color:var(--ink)}
-.byte i{font-style:normal;font-size:.66rem;color:var(--ink-faint)}
-.byte:nth-child(2){animation-delay:.4s}.byte:nth-child(3){animation-delay:.8s}.byte:nth-child(4){animation-delay:1.2s}.byte:nth-child(5){animation-delay:1.6s}.byte:nth-child(6){animation-delay:2s}
-.byte.chk b{color:var(--accent-ink)}
-@keyframes byte-on{0%{background:var(--accent-tint-strong);border-color:var(--accent)}12%,100%{background:var(--surface);border-color:var(--line-strong)}}
-.mcu-foot{display:flex;justify-content:space-between;gap:1rem;margin-top:.9rem;padding-top:.9rem;border-top:1px dashed var(--line);font-size:.76rem;color:var(--ink-faint)}
+.stages{list-style:none;margin:1.1rem 0 0;padding:0;position:relative}
+.stages::before{content:'';position:absolute;left:11px;top:22px;bottom:22px;width:2px;background:var(--line-strong)}
+.stage{position:relative;display:flex;gap:1rem;align-items:flex-start;padding:.62rem 0}
+.stage .node{flex:none;width:24px;height:24px;border-radius:50%;background:var(--surface);border:2px solid var(--line-strong);z-index:1;animation:stage-on 10s ease infinite}
+.stage:nth-child(2) .node{animation-delay:1.6s}
+.stage:nth-child(3) .node{animation-delay:3.2s}
+.stage:nth-child(4) .node{animation-delay:4.8s}
+.stage:nth-child(5) .node{animation-delay:6.4s}
+.stage b{display:block;font-family:var(--font-display);font-size:1.02rem;color:var(--ink);line-height:1.3}
+.stage div span{display:block;margin-top:.1rem;font-size:.84rem;color:var(--ink-soft);line-height:1.45}
+@keyframes stage-on{0%{background:var(--surface);border-color:var(--line-strong)}5%,70%{background:var(--accent);border-color:var(--accent)}80%,100%{background:var(--surface);border-color:var(--line-strong)}}
 
-.edu-card .areas{margin-top:.7rem;padding-top:.7rem;border-top:1px dashed var(--line);color:var(--ink-faint);font-size:.82rem;line-height:1.55}
+.pipeline-foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-top:.9rem;padding-top:1rem;border-top:1px dashed var(--line);font-size:.8rem;color:var(--ink-faint)}
 
-@media(max-width:720px){.mcu{border-radius:16px}.mcu-foot{flex-direction:column;gap:.2rem}}
-@media(prefers-reduced-motion:reduce){.mcu .trace-tx,.byte{animation:none}}
+@media(max-width:720px){.pipeline{border-radius:16px;padding:1.15rem}}
+@media(prefers-reduced-motion:reduce){.stage .node{animation:none;background:var(--accent);border-color:var(--accent)}}
