@@ -13,7 +13,7 @@
 <meta property="og:image" content="assets/images/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon/favicon1.svg" type="image/svg+xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
     "https://github.com/muralig-22"
   ],
   "alumniOf": {
-    "@type": "CollegeOrUniversity",
+    "@type": "College",
     "name": "Bannari Amman Institute of Technology"
   }
 }
@@ -73,7 +73,7 @@
   <section class="hero" id="top">
     <div class="container hero-grid">
       <div>
-        <p class="hero-eyebrow"><span class="dot"></span> Interning at Qneuro India · Graduating 2026</p>
+        <p class="hero-eyebrow"><span class="dot"></span> Interning at Qneuro India · B.E. 2026</p>
         <h1>Embedded systems built from <em>hardware to firmware</em>.</h1>
         <p class="hero-sub">I build the firmware and sensor pipelines that turn raw ECG, PPG, motion and vibration signals into something a system can act on — on STM32 and ESP32 hardware, from ADC to UART to dashboard.</p>
         <div class="hero-actions">
@@ -88,20 +88,47 @@
       </div>
 
       <div class="hero-visual">
-        <div class="scope animate" id="scope">
-          <div class="scope-head">
-            <span class="lbl">ECG · LIVE</span>
-            <span class="val">72 BPM</span>
+        <div class="mcu" id="mcu">
+          <div class="mcu-head">
+            <span class="lbl">STM32F401RE</span>
+            <span class="val">Cortex-M4 · 84 MHz</span>
           </div>
-          <svg viewBox="0 0 480 200" role="img" aria-label="Stylised ECG waveform, representative of the signal-processing work in Murali's projects">
-            <line class="scope-grid-line" x1="0" y1="50" x2="480" y2="50"/>
-            <line class="scope-grid-line" x1="0" y1="100" x2="480" y2="100"/>
-            <line class="scope-grid-line" x1="0" y1="150" x2="480" y2="150"/>
-            <path class="scope-trace" d="M0,100 L40,100 L55,100 L62,80 L70,120 L78,20 L86,170 L94,95 L100,100 L140,100 L155,100 L162,80 L170,120 L178,20 L186,170 L194,95 L200,100 L240,100 L255,100 L262,80 L270,120 L278,20 L286,170 L294,95 L300,100 L340,100 L355,100 L362,80 L370,120 L378,20 L386,170 L394,95 L400,100 L440,100 L455,100 L462,80 L470,120 L478,20 L480,90"/>
+          <svg viewBox="-24 0 528 320" role="img" aria-label="Stylised STM32 microcontroller package with labelled ADC, USART, I2C and SPI pins">
+            <g class="pins"><rect class="pin" x="122" y="76" width="18" height="7"/><rect class="pin" x="122" y="100" width="18" height="7"/><rect class="pin" x="122" y="124" width="18" height="7"/><rect class="pin" x="122" y="148" width="18" height="7"/><rect class="pin" x="122" y="172" width="18" height="7"/><rect class="pin" x="122" y="196" width="18" height="7"/><rect class="pin" x="122" y="220" width="18" height="7"/><rect class="pin" x="122" y="244" width="18" height="7"/><rect class="pin" x="340" y="76" width="18" height="7"/><rect class="pin" x="340" y="100" width="18" height="7"/><rect class="pin" x="340" y="124" width="18" height="7"/><rect class="pin" x="340" y="148" width="18" height="7"/><rect class="pin" x="340" y="172" width="18" height="7"/><rect class="pin" x="340" y="196" width="18" height="7"/><rect class="pin" x="340" y="220" width="18" height="7"/><rect class="pin" x="340" y="244" width="18" height="7"/><rect class="pin" x="156" y="42" width="7" height="18"/><rect class="pin" x="180" y="42" width="7" height="18"/><rect class="pin" x="204" y="42" width="7" height="18"/><rect class="pin" x="228" y="42" width="7" height="18"/><rect class="pin" x="252" y="42" width="7" height="18"/><rect class="pin" x="276" y="42" width="7" height="18"/><rect class="pin" x="300" y="42" width="7" height="18"/><rect class="pin" x="324" y="42" width="7" height="18"/><rect class="pin" x="156" y="260" width="7" height="18"/><rect class="pin" x="180" y="260" width="7" height="18"/><rect class="pin" x="204" y="260" width="7" height="18"/><rect class="pin" x="228" y="260" width="7" height="18"/><rect class="pin" x="252" y="260" width="7" height="18"/><rect class="pin" x="276" y="260" width="7" height="18"/><rect class="pin" x="300" y="260" width="7" height="18"/><rect class="pin" x="324" y="260" width="7" height="18"/></g>
+            <rect class="chip-body" x="140" y="60" width="200" height="200" rx="8"/>
+            <circle class="chip-dot" cx="158" cy="78" r="5"/>
+            <text class="chip-name" x="240" y="152" text-anchor="middle">STM32</text>
+            <text class="chip-sub" x="240" y="176" text-anchor="middle">F401RE</text>
+            <text class="chip-sub" x="240" y="214" text-anchor="middle">ARM Cortex-M4</text>
+            <path class="trace trace-tx" d="M122 148 H90"/>
+            <path class="trace" d="M122 100 H90"/>
+            <path class="trace" d="M122 172 H90"/>
+            <path class="trace" d="M358 100 H392"/>
+            <path class="trace" d="M358 124 H392"/>
+            <path class="trace" d="M358 196 H392"/>
+            <g class="pin-labels">
+              <text x="84" y="104" text-anchor="end">PA0 · ADC1_IN0</text>
+              <text x="84" y="152" text-anchor="end" class="hot">PA2 · USART2_TX</text>
+              <text x="84" y="176" text-anchor="end">PA3 · USART2_RX</text>
+              <text x="398" y="104">PB6 · I²C1_SCL</text>
+              <text x="398" y="128">PB7 · I²C1_SDA</text>
+              <text x="398" y="200">PA5 · SPI1_SCK</text>
+            </g>
           </svg>
-          <div class="scope-foot">
-            <span>500 Hz · Pan-Tompkins R-peak detection</span>
-            <span>Quality: GOOD</span>
+          <div class="frame" aria-label="Example UART frame: sync, length, command, two data bytes, XOR checksum">
+            <div class="frame-title"><span>USART2 TX · example frame</span><span>XOR checksum</span></div>
+            <div class="frame-bytes">
+              <span class="byte"><b>A5</b><i>sync</i></span>
+              <span class="byte"><b>04</b><i>len</i></span>
+              <span class="byte"><b>01</b><i>cmd</i></span>
+              <span class="byte"><b>00</b><i>data</i></span>
+              <span class="byte"><b>48</b><i>data</i></span>
+              <span class="byte chk"><b>4D</b><i>xor</i></span>
+            </div>
+          </div>
+          <div class="mcu-foot">
+            <span>Timer-triggered ADC → filter → UART</span>
+            <span>Stylised pinout</span>
           </div>
         </div>
       </div>
@@ -117,9 +144,10 @@
 <h2>Building reliable systems from hardware to firmware</h2>
         </div>
         <div class="about-copy">
-          <p>I'm a <strong>Biomedical Engineering (Hons.) graduate</strong> from Bannari Amman Institute of Technology, with hands-on experience building embedded hardware and firmware systems at Qneuro India.</p> I write ARM Cortex-M firmware for real-time EEG acquisition.</p>
+          <p>I'm a <strong>Biomedical Engineering (Hons.) graduate</strong> from Bannari Amman Institute of Technology, with hands-on experience building embedded hardware and firmware systems at Qneuro India. I write ARM Cortex-M firmware for real-time EEG acquisition.</p>
           <p>Most of what I build sits at the same junction: a physical sensor on one side — an accelerometer, an ECG front-end, a pressure array — and a microcontroller on the other that has to sample it, process it correctly, and get the result somewhere useful without falling behind in real time.</p>
           <p>That constraint is what I enjoy. Whether it's fitting a QRS detector into a 2&nbsp;ms sampling budget on an STM32F401, or getting three identical I²C accelerometers to talk to one ESP32 without address conflicts, the interesting part is almost always the boundary between the hardware's limits and what the signal actually needs.</p>
+          <p>I like understanding a system end to end — from the signal and the circuit to the firmware and the data it produces — and I'm continuing to strengthen my foundations in Embedded C, real-time systems, communication protocols and low-level debugging.</p>
         </div>
       </div>
       <div class="stat-list">
@@ -150,6 +178,12 @@
             <span class="tag">ESP32 / ESP32-S3</span>
             <span class="tag">FreeRTOS</span>
             <span class="tag">Bare-metal &amp; HAL drivers</span>
+            <span class="tag">ADC / DMA / Timers</span>
+            <span class="tag">GPIO &amp; interrupts</span>
+            <span class="tag">AVR</span>
+            <span class="tag">PIC</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">Embedded Linux</span>
           </div>
         </div>
         <div class="skill-card">
@@ -160,7 +194,9 @@
             <span class="tag">I²C</span>
             <span class="tag">BLE</span>
             <span class="tag">TCP/IP</span>
+            <span class="tag">MQTT</span>
             <span class="tag">CAN</span>
+            <span class="tag">Modbus</span>
           </div>
         </div>
         <div class="skill-card">
@@ -172,6 +208,7 @@
             <span class="tag">Oscilloscope</span>
             <span class="tag">Logic analyzer</span>
             <span class="tag">JTAG / SWD</span>
+            <span class="tag">Hardware validation</span>
           </div>
         </div>
         <div class="skill-card">
@@ -198,6 +235,7 @@
           <div class="tag-row">
             <span class="tag">STM32CubeIDE</span>
             <span class="tag">STM32CubeMX</span>
+            <span class="tag">Keil</span>
             <span class="tag">Git</span>
             <span class="tag">VS Code</span>
             <span class="tag">Firebase RTDB</span>
@@ -386,10 +424,11 @@
           </div>
           <ul>
             <li>Developed and debugged Embedded C firmware on ARM Cortex-M microcontrollers for real-time EEG acquisition and biomedical data processing.</li>
+            <li>Worked on EEG data acquisition and peripheral integration using ADC, SPI, I²C, UART, DMA, GPIO, timers and interrupts.</li>
             <li>Implemented BLE communication for wireless transfer of acquired physiological sensor data.</li>
             <li>Built an Automatic Gain Control (AGC) algorithm for dynamic IR/Red LED calibration based on skin tone, working on signal acquisition and sensor calibration.</li>
             <li>Integrated Linux-based Raspberry Pi systems for TCP/IP communication and camera streaming, and carried out PCB bring-up and circuit debugging.</li>
-            <li>Ran firmware testing, calibration and system verification using oscilloscopes and logic analyzers alongside hardware and software teams.</li>
+            <li>Ran firmware testing, calibration and system verification using oscilloscopes, logic analyzers and JTAG/SWD tools alongside hardware and software teams.</li>
           </ul>
         </div>
       </div>
@@ -445,6 +484,7 @@
           <div class="school">Bannari Amman Institute of Technology</div>
           <div class="when">2022 — 2026</div>
           <div class="score">CGPA 8.2</div>
+          <div class="areas">Biomedical instrumentation · Digital electronics · Microcontrollers · Signals and systems · Sensor interfacing · Embedded systems</div>
         </div>
         <div class="edu-card">
           <div class="degree">Higher &amp; Secondary Education</div>
