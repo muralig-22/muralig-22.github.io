@@ -43,13 +43,4 @@
     );
     sections.forEach(function (s) { observer.observe(s); });
   }
-
-  /* Hero waveform: only run the draw-in animation once, and skip it
-     entirely if the visitor prefers reduced motion (also handled in CSS,
-     this just avoids re-triggering it if the element is toggled). */
-  var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var scope = document.getElementById("scope");
-  if (scope && prefersReducedMotion) {
-    scope.classList.remove("animate");
-  }
 })();
