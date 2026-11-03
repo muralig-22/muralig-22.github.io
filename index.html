@@ -87,52 +87,42 @@
         </div>
       </div>
 
-      <div class="hero-visual">
-        <div class="mcu" id="mcu">
-          <div class="mcu-head">
-            <span class="lbl">ATSAM3X8e</span>
-            <span class="val">512 KB · 84 MHz</span>
-          </div>
-          <svg viewBox="-24 0 528 320" role="img" aria-label="Stylised STM32 microcontroller package with labelled ADC, USART, I2C and SPI pins">
-            <g class="pins"><rect class="pin" x="122" y="76" width="18" height="7"/><rect class="pin" x="122" y="100" width="18" height="7"/><rect class="pin" x="122" y="124" width="18" height="7"/><rect class="pin" x="122" y="148" width="18" height="7"/><rect class="pin" x="122" y="172" width="18" height="7"/><rect class="pin" x="122" y="196" width="18" height="7"/><rect class="pin" x="122" y="220" width="18" height="7"/><rect class="pin" x="122" y="244" width="18" height="7"/><rect class="pin" x="340" y="76" width="18" height="7"/><rect class="pin" x="340" y="100" width="18" height="7"/><rect class="pin" x="340" y="124" width="18" height="7"/><rect class="pin" x="340" y="148" width="18" height="7"/><rect class="pin" x="340" y="172" width="18" height="7"/><rect class="pin" x="340" y="196" width="18" height="7"/><rect class="pin" x="340" y="220" width="18" height="7"/><rect class="pin" x="340" y="244" width="18" height="7"/><rect class="pin" x="156" y="42" width="7" height="18"/><rect class="pin" x="180" y="42" width="7" height="18"/><rect class="pin" x="204" y="42" width="7" height="18"/><rect class="pin" x="228" y="42" width="7" height="18"/><rect class="pin" x="252" y="42" width="7" height="18"/><rect class="pin" x="276" y="42" width="7" height="18"/><rect class="pin" x="300" y="42" width="7" height="18"/><rect class="pin" x="324" y="42" width="7" height="18"/><rect class="pin" x="156" y="260" width="7" height="18"/><rect class="pin" x="180" y="260" width="7" height="18"/><rect class="pin" x="204" y="260" width="7" height="18"/><rect class="pin" x="228" y="260" width="7" height="18"/><rect class="pin" x="252" y="260" width="7" height="18"/><rect class="pin" x="276" y="260" width="7" height="18"/><rect class="pin" x="300" y="260" width="7" height="18"/><rect class="pin" x="324" y="260" width="7" height="18"/></g>
-            <rect class="chip-body" x="140" y="60" width="200" height="200" rx="8"/>
-            <!-- <circle class="chip-dot" cx="158" cy="78" r="5"/>
-            <text class="chip-name" x="240" y="152" text-anchor="middle">μC</text>
-            <text class="chip-sub" x="240" y="176" text-anchor="middle">ATSAM3X8e</text>
-            <text class="chip-sub" x="240" y="214" text-anchor="middle">ARM Cortex-M3</text> -->
-            <path class="trace trace-tx" d="M122 148 H90"/>
-            <path class="trace" d="M122 100 H90"/>
-            <path class="trace" d="M122 172 H90"/>
-            <path class="trace" d="M358 100 H392"/>
-            <path class="trace" d="M358 124 H392"/>
-            <path class="trace" d="M358 196 H392"/>
-            <g class="pin-labels">
-              <text x="84" y="104" text-anchor="end">PA0 · ADC1_IN0</text>
-              <text x="84" y="152" text-anchor="end" class="hot">PA2 · USART2_TX</text>
-              <text x="84" y="176" text-anchor="end">PA3 · USART2_RX</text>
-              <text x="398" y="104">PB6 · I²C1_SCL</text>
-              <text x="398" y="128">PB7 · I²C1_SDA</text>
-              <text x="398" y="200">PA5 · SPI1_SCK</text>
-            </g>
-          </svg>
-          <div class="frame" aria-label="Example UART frame: sync, length, command, two data bytes, XOR checksum">
-            <div class="frame-title"><span>USART2 TX · example frame</span><span>XOR checksum</span></div>
-            <div class="frame-bytes">
-              <span class="byte"><b>A5</b><i>sync</i></span>
-              <span class="byte"><b>04</b><i>len</i></span>
-              <span class="byte"><b>01</b><i>cmd</i></span>
-              <span class="byte"><b>00</b><i>data</i></span>
-              <span class="byte"><b>48</b><i>data</i></span>
-              <span class="byte chk"><b>4D</b><i>xor</i></span>
-            </div>
-          </div>
-          <div class="mcu-foot">
-            <span>Timer-triggered ADC → filter → UART</span>
-            <span>Stylised pinout</span>
-          </div>
-        </div>
-      </div>
+<div class="hero-visual">
+  <div class="pipeline">
+    <div class="pipeline-head">
+      <span class="lbl">Idea to product</span>
+      <span class="val"><i class="live"></i> Open for freelance work</span>
     </div>
+
+    <ol class="stages">
+      <li class="stage">
+        <span class="node"></span>
+        <div><b>Your idea</b><span>Concept, constraints and budget, scoped together</span></div>
+      </li>
+      <li class="stage">
+        <span class="node"></span>
+        <div><b>Hardware</b><span>Sensor selection, schematic and PCB in Altium</span></div>
+      </li>
+      <li class="stage">
+        <span class="node"></span>
+        <div><b>Firmware</b><span>Embedded C on STM32 / ESP32, tested on the bench</span></div>
+      </li>
+      <li class="stage">
+        <span class="node"></span>
+        <div><b>Connectivity</b><span>BLE, Wi-Fi, cloud sync and a web dashboard</span></div>
+      </li>
+      <li class="stage">
+        <span class="node"></span>
+        <div><b>Working product</b><span>A prototype you can demo, hand over and build on</span></div>
+      </li>
+    </ol>
+
+    <div class="pipeline-foot">
+      <span>Based in Chennai</span>
+      <a href="#contact" class="btn btn-primary btn-small">Start a project</a>
+    </div>
+  </div>
+</div>
   </section>
 
   <!-- ============================= ABOUT ============================= -->
